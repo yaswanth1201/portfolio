@@ -1,0 +1,405 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.start{
+    display: flex;
+}
+/* sidenav*/
+.sidenav{
+    height: 100vh;    
+    background-color: black;
+    border-right: 1px solid rgba(255, 255, 255, 0.116);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 2%;
+    width: 18%   ;
+}
+.profile{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidelist{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidenav a{
+    text-decoration: none;
+    color: white;
+    background: none;
+}
+
+.sidenav a:hover{
+    color: red;
+}
+.title{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.main{
+    width: 82%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* home */
+
+.name span{
+    color: #dc3545;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+.main .web::before{
+    content: "vdesfhoig";
+    animation: myani 2s infinite ;
+}
+.main .web::after{
+    content: "";
+    animation: myfra 5s infinite ;
+}
+@keyframes myfra {
+    0%{
+        transform: translateX(100);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+@keyframes myfra{
+    0%,25%{
+        content: "developer";
+    }
+    26%,50%{
+        content:"designer";
+    }
+    51%,75%{
+        content:"developer" ;
+    }
+    76%,100%{
+        content:"designer";
+    }
+}
+@keyframes myani{
+    0%,50%{
+        content: "ui/ux";
+    }
+    26%,50%{
+        content:"web";
+    }
+    51%,75%{
+        content:"ui/ux" ;
+    }
+    76%,100%{
+        content:"web";
+    }
+}
+/* about */
+#about{
+    min-height: 80vh;
+    width: 100%;
+}
+.subhead{
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 3% !important;
+    margin-top: 5% !important;
+}
+
+.details{
+    font-size: large;
+     display: flex;
+     justify-content: space-between;
+
+    flex-wrap: wrap;
+     
+}
+.about button{
+    font-size: medium;
+    background-color:#dc3545;
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    width: 150px;
+}
+/* skills */
+#skills{
+    background-color:#f7f7f7 ;  
+    min-height: 100vh;
+}
+.s1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillset{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+}
+.skull{
+    display: flex;
+    justify-content: center;
+}
+.tech{
+    margin: 1% !important;
+    height: 11rem;
+    width: 15rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.119);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    background-color:#fff;
+}
+.tech:hover{
+   box-shadow: 0px 0px 25px #dc3545;
+   border:1px solid #dc3545;
+}
+
+.skl-para{
+    font-weight: 500;
+    font-size: 20px;
+}
+.ram:hover{
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 25% {
+      opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+  }
+
+/* contacts */
+#contact{
+    background-color: #f7f7f7;
+    min-height: 60vh;
+}
+.contacts{
+    align-items: start;
+    display:flex;
+    justify-content: center;
+}
+.input2{
+    display: flex;
+    justify-content: flex-end;
+}
+.contacts button{
+    font-size: medium;
+    background-color:#dc3545;
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    width: 150px;
+}
+#footer{
+    min-height: 40vh;
+    background-color: black;
+}
+.end{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.send{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+#works{
+    min-height: 80vh;
+}
+.myworks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.work, .work1, .work2{
+    position: relative;
+    width: 400px; /* Set a fixed width for consistency */
+    max-width: 100%;
+    text-align: center;
+}
+
+.work img, .work1 img, .work2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;   
+}
+
+.pro{
+    display: none;
+}
+.max{
+    display: none;
+}
+.work:hover{
+    .pro{
+        display: block;
+    }
+    .max{
+        display: block;
+    }
+    img{
+        opacity: 0.7;
+    }
+}
+.work1:hover{
+    .pro{
+        display: block;
+    }
+    .max{
+        display: block;
+    }
+    img{
+        opacity: 0.7;
+    }
+}
+.work2:hover{
+    .pro{
+        display: block;
+    }
+    .max{
+        display: block;
+    }
+        img{
+        opacity: 0.5;
+    }
+}
+.pro:hover{
+   background-color: black;
+   color: white;
+}
+
+.buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        left: 0;
+        gap: 5%;
+}
+.pro {
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+    
+}
+
+.max {
+    width: 100%;
+    background-color: #dc3546e4;
+    color: white;
+    border-radius: 15px;
+}
+@media(max-width: 767px){
+    .main {
+        width: 100%;
+    }
+    .sidenav {
+        display: none;
+    }
+    .hold{
+        padding-left: 2% !important;
+    }
+    .myworks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work, .work1, .work2 {
+        width: 90%; /* Make it take more space on smaller screens */
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        gap: 15px;
+        top: 30%;
+    }
+
+    .pro {
+        width: 100%;
+    }
+
+    .max {
+        width: 100%;
+    }
+    .name {
+        font-size: 10vw;
+      }
+  
+    .role {
+        font-size: 6vw;
+    }
+    .home img{
+        object-fit: contain;
+    }
+
+}
+
+@media (min-width: 767px){
+    .dropdown {
+        display: none;
+    }
+    .hold{
+        padding-left: 4% !important;
+    }
+    .name{
+        font-size: 5vw;
+    }
+    .role{
+        font-size: 3vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
