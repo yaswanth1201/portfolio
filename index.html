@@ -245,24 +245,26 @@
           <div class="container-fluid p-3">
             <p class="subhead">Contact Me</p>
             <div class="contacts py-5">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="apikey" value="b900e9e7-b1b7-405c-9c0a-713c1483d9a3">
               <div class="row ">
-        
+              
                 <!-- Name Input -->
                 <div class="col-12 col-md-5 input1 mb-3">
-                  <input type="text" class="hold" placeholder="Name" style="width: 100%; height: 40px; border: 0.5px solid rgba(0, 0, 0, 0.113); box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);">
+                  <input type="text" class="hold" name="name" placeholder="Name" style="width: 100%; height: 40px; border: 0.5px solid rgba(0, 0, 0, 0.113); box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);">
                 </div>
                    <div class="col-md-2"></div>
                 <!-- Email Input -->
                 <div class="col-12 col-md-5 input2 mb-3">
-                  <input type="text" class="hold" placeholder="Email" style="width: 100%; height: 40px; border: 0.5px solid rgba(0, 0, 0, 0.113); box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);">
+                  <input type="text" class="hold" name="email" placeholder="Email" style="width: 100%; height: 40px; border: 0.5px solid rgba(0, 0, 0, 0.113); box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);">
                 </div>
         
                 <!-- Subject and Message Inputs -->
                 <div class="col-12 mb-3">
-                  <input type="text" placeholder="Subject" style="width: 100%; height: 40px; padding-left: 2% !important; border: 0.5px solid rgba(0, 0, 0, 0.113); box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);">
+                  <input type="text" placeholder="Subject" name="subject" style="width: 100%; height: 40px; padding-left: 2% !important; border: 0.5px solid rgba(0, 0, 0, 0.113); box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);">
                 </div>
                 <div class="col-12 mb-3">
-                  <textarea name="" id="" cols="30" rows="7" placeholder="Message" style="width: 100%; padding-left: 2% !important; border: 0.5px solid rgba(0, 0, 0, 0.113); box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);"></textarea>
+                  <textarea name="message" id="" cols="30" rows="7" placeholder="Message"  style="width: 100%; padding-left: 2% !important; border: 0.5px solid rgba(0, 0, 0, 0.113); box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);"></textarea>
                 </div>
         
                 <!-- Submit Button -->
@@ -270,10 +272,14 @@
                   <button class="p-2 my-3">Send Message</button>
                 </div>
         
+             
               </div>
+            </form>
+
             </div>
           </div>
         </section>
+        
         
         
         
