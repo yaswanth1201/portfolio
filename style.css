@@ -237,7 +237,7 @@
     align-items: center;  
 }
 #works{
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .myworks{
     display: flex;
@@ -245,14 +245,14 @@
     justify-content: space-between;
     gap: 20px;
 }
-.work, .work1, .work2{
+.work, .work1, .work2, .work3{
     position: relative;
     width: 400px; /* Set a fixed width for consistency */
     max-width: 100%;
     text-align: center;
 }
 
-.work img, .work1 img, .work2 img{
+.work img, .work1 img, .work2 img, .work3 img{
     width: 100%;
     height: auto;
     border-radius: 10px;   
@@ -294,6 +294,17 @@
         display: block;
     }
         img{
+        opacity: 0.5;
+    }
+}
+.work3:hover{
+    .pro{
+        display: block;
+    }
+    .max{
+        display: block;
+    }
+    img{
         opacity: 0.5;
     }
 }
