@@ -86,16 +86,16 @@
     
 }
 @keyframes myfra{
-    0%,25%{
+    0%,50%{
         content: "developer";
     }
-    26%,50%{
+    /* 26%,50%{
         content:"designer";
     }
     51%,75%{
         content:"developer" ;
-    }
-    76%,100%{
+    } */
+    51%,100%{
         content:"designer";
     }
 }
@@ -103,13 +103,13 @@
     0%,50%{
         content: "ui/ux";
     }
-    26%,50%{
+    /* 26%,50%{
         content:"web";
     }
     51%,75%{
         content:"ui/ux" ;
-    }
-    76%,100%{
+    } */
+    51%,100%{
         content:"web";
     }
 }
